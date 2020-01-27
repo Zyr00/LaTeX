@@ -1,0 +1,134 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+
+\pagestyle{fancy}
+\fancyhf{} % apagar as configurações
+\rhead{Tunes}
+\rfoot{Página \bfseries\thepage}
+
+\newcommand{\bi}[1]{\textbf{\textit{#1}}}
+
+\newenvironment{realce}{$\Rightarrow$}{$\Leftarrow$}
+
+\begin{document}
+
+  \section{normal stuff}
+
+  Texto normal com codificação \emph{latin1} \\
+  \texttt{monotype} \\
+  \textbf{bold} \\
+  \textit{italic} \\
+  \textsc{SmallCaps} \\
+  \emph{emphase} \\
+
+  \begin{center}
+    Texto centrado\marginpar{notas margin}
+  \end{center}
+
+  \begin{flushright}
+    Texto à direita\footnote{footnote}
+  \end{flushright}
+
+  \begin{itemize}
+    \item item 1
+    \item item 2
+    \item item 3
+  \end{itemize}
+
+  \begin{enumerate}
+    \item item 1
+    \item item 2
+    \item item 3
+  \end{enumerate}
+
+  \begin{description}
+    \item[foo] item 1
+    \item[bar] item 2
+    \item[zbr] item 3
+  \end{description}
+
+  Número bi: \bi{123123123}
+
+  \clearpage{}
+
+  \section{%
+    \begin{realce}
+      Formulas:
+    \end{realce}
+  }
+
+  \paragraph{}
+  As formulas podem ser in-line com o assim $ {(a + b)}^2 = a^2 + 2ab + b^2 $ ou assim
+  \[ {(a + b)}^2 = a^2 + 2ab + b^2 \]
+
+  \paragraph{}
+  \begin{equation}
+    \centering
+    \label{Firs}
+    a_0 + \cdots + a_n + a_{n + 1}
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    \sqrt{\frac{1}{2}}
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    \lim_{n \to \infty}\sum_{k = 1}^n
+    \frac{1}{k^2} = \frac{\pi^2}{6}
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    \forall x \in \mathbf{R} \qquad x^{2} \geq 0
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    v = \sigma_1 \cdot\sigma_2 \tau_1 \cdot\tau_2
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    \lim_{x \rightarrow 0} \frac{\sin x}{x} = 1
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    1 + {(\frac{1}{1-x^{2}})}^3
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    1 + {\left( \frac{1}{1-x^{2}} \right)}^3
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    \mathbf{x} = {\left(%
+        \begin{array}{ccc}
+        x_{11} & x_{12} & \ldots \\
+        x_{21} & x_{22} & \ldots \\
+        \vdots & \vdots & \ddots
+        \end{array}
+        \right)}
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    1 - \frac{100^{a \times b}}{\frac{\alpha + \beta}{\Omega}}
+  \end{equation}
+
+  \begin{equation}
+    \centering
+    \mid x \mid =
+    \begin{cases}
+      x  & (x \geq 0) \\
+      -x & (x < 0)
+    \end{cases}
+  \end{equation}
+
+\end{document}

@@ -1,0 +1,12 @@
+\frametitle{this is the title}
+
+    \begin{columns}
+    \column{.9\textwidth}
+    \begin{lstlisting}[language=bash]
+for i in $(seq 10); do
+  echo 'This is line' $i
+done
+    \end{lstlisting}
+
+    \end{columns}
+
